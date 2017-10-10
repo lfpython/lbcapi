@@ -6,7 +6,7 @@ import time
 import urlparse
 
 
-def oauth2(access_token, client_id, client_secret=None, refresh_token=None, expires_at=None, server='https://localbitcoins.com'):
+def oauth2(access_token, client_id, client_secret=None, refresh_token=None, expires_at=None, server='https://localbitcoins'):
     conn = Connection()
     conn._set_oauth2(server, client_id, client_secret, access_token, refresh_token, expires_at)
     return conn
